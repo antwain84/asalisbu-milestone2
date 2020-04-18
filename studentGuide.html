@@ -223,53 +223,54 @@ function evalute()
     var gradeTwo=document.getElementById("g2").value;
     var gradeThree=document.getElementById("g3").value;   
     var gradeFour=document.getElementById("g4").value;   
-
+    
+    var avg = (Number(gradeOne)+Number(gradeTwo)+Number(gradeThree)+Number(gradeFour))/4;
     if(document.getElementById("selection").value=='1')
     {
 
-       if((Number(gradeOne)+Number(gradeTwo)+Number(gradeThree)+Number(gradeFour))/4 >3.2)
+       if(avg > 3.2)
        {
-            document.getElementById("message").innerHTML = "Congratulations,you got it!";
+            document.getElementById("message").innerHTML = "With a GPA of " + avg + ", you qualify!";
        }
        else
        {
-            document.getElementById("message").innerHTML = "Sorry, you are not eligible.";
+            document.getElementById("message").innerHTML = "With a GPA of " +avg +", you are not eligible.";
        }
     }
 
     if(document.getElementById("selection").value=='2')
     {
-       if((Number(gradeOne)+Number(gradeTwo)+Number(gradeThree)+Number(gradeFour))/4 >3.2)
+       if(avg > 3.2)
        {
-            document.getElementById("message").innerHTML = "Congratulations,you got it!";
+            document.getElementById("message").innerHTML = "With a GPA of " + avg + ", you qualify!";
        }
        else
        {
-            document.getElementById("message").innerHTML = "Sorry, you are not eligible.";
+            document.getElementById("message").innerHTML = "With a GPA of " +avg +", you are not eligible.";
        }
     }
 
     if(document.getElementById("selection").value=='3')
     {
-       if((Number(gradeOne)+Number(gradeTwo)+Number(gradeThree)+Number(gradeFour))/4 >3.7)
+       if(avg > 3.7)
        {
-            document.getElementById("message").innerHTML = "Congratulations,you got it!";
+            document.getElementById("message").innerHTML = "With a GPA of " + avg + ", you qualify!";
        }
        else
        {
-            document.getElementById("message").innerHTML = "Sorry, you are not eligible.";
+            document.getElementById("message").innerHTML = "With a GPA of " +avg +", you are not eligible.";
        }
     }
 
     if(document.getElementById("selection").value=='4')
     {
-       if((Number(gradeOne)+Number(gradeTwo)+Number(gradeThree)+Number(gradeFour))/4 >3.7)
+       if(avg > 3.7)
        {
-            document.getElementById("message").innerHTML = "Congratulations,you got it!";
+            document.getElementById("message").innerHTML = "With a GPA of " + avg + ", you qualify!";
        }
        else
        {
-            document.getElementById("message").innerHTML = "Sorry, you are not eligible.";
+            document.getElementById("message").innerHTML = "With a GPA of " +avg +", you are not eligible.";
        }
     }
     if(document.getElementById("selection").value=='0')
@@ -278,7 +279,9 @@ function evalute()
        document.getElementById("message").innerHTML = "";
 
     }
+
 }
+
     
 
 </script>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+ <div class="row">
+        <div class ="logo">
+            <a href="https://www.kennesaw.edu"><img src="ITimage2.PNG" alt="click Here" width="300" height="150"> </a>
+        </div>       
+    
+        
+        <ul class="main-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="freestyle.html">More Info</a></li>
+            <li><a href="studentGuide.html"> Student Guide</a></li>
+        </ul>
+        
+    </div>
+    
+   <div class="hero">
+        <h1> Knowledge and Research Center </h1>
+    </div>
+
+<form>
+<div class="cell3">
+ 
+ <div class="words3">
+        <p><b>Select Student Status and Position Desired</b></p>
+    </div>   
+
+
+<select id="selection" onchange='getPosition(this.value)'>
+    <option value="0">Select Staute and Position </option>
+    <option value="1">Under Graduate Position 1</option>
+    <option value="2">Under Graduate Position 2</option>
+    <option value="3">Graduate Position 1</option>
+    <option value="4">Graduate Position 2</option>
+</select>
+  
+    
+   <br>
+    <div class="words3">
+        <p><b>Please select your grade for the courses below</b></p>
+    </div>
+   <!---<label id ="course">Please select your grade for the courses below </label>--->
+   <br>
+   <label id="subject1"></label>
+<br>
+
+<label id="grade1">Grade Achieved</label>
+    
+<select id="g1">
+    <option value="4">A</option>
+    <option value="3">B</option>
+    <option value="2">C</option>
+    <option value="1">D</option>
+    <option value="0">F</option>
+    
+</select><br>
+  
+<label id="subject2"></label>
+<br>
+    
+<label id="grade2">Grade Achieved</label>
+    
+<select id="g2">
+    <option value="4">A</option>
+    <option value="3">B</option>
+    <option value="2">C</option>
+    <option value="1">D</option>
+    <option value="0">F</option>
+</select>
+<br>
+  
+<label id="subject3"></label>
+<br>
+   <label id="grade3">Grade Achieved</label>
+    
+<select id="g3">
+    <option value="4">A</option>
+    <option value="3">B</option>
+    <option value="2">C</option>
+    <option value="1">D</option>
+    <option value="0">F</option>
+</select>
+<br>
+  
+<label id="subject4"></label>
+<br>
+<label id="grade4">Grade Achieved</label>
+
+
+<select id="g4">
+    <option value="4">A</option>
+    <option value="3">B</option>
+    <option value="2">C</option>
+    <option value="1">D</option>
+    <option value="0">F</option>
+    
+</select>
+   
+<br>
+
+</div> <!---LAST CHANGE--->
+</form>
+
+<!---<button type="button" onclick="evalute()">Evaluate</button>--->
+<input class="checkBtn" id="checkBtn" type="button" onclick="evalute()" value="Evaluate"></input>
+<label id="message" for="chk2"></label>
+
+<script>
+document.getElementById("course").style.visibility = "hidden";
+document.getElementById("g1").style.visibility = "hidden";
+document.getElementById("g2").style.visibility = "hidden";
+document.getElementById("g3").style.visibility = "hidden";
+document.getElementById("g4").style.visibility = "hidden";
+document.getElementById("grade1").style.visibility = "hidden";
+document.getElementById("grade2").style.visibility = "hidden";
+document.getElementById("grade3").style.visibility = "hidden";
+document.getElementById("grade4").style.visibility = "hidden";
+
+function getPosition(value)
+{
+    document.getElementById("message").innerHTML = "";
+
+    if(value == '1')
+    {
+        document.getElementById("subject1").innerHTML = "CSE 3203 Mobile System Overview";
+        document.getElementById("subject2").innerHTML = "IT 4213 Mobile Web Development";
+        document.getElementById("subject3").innerHTML = "IT 4523 Linux/Unix Administration";
+        document.getElementById("subject4").innerHTML = "IT 4230 Intro Operating Systems";
+        document.getElementById("g1").style.visibility = "visible";
+        document.getElementById("g2").style.visibility = "visible";
+        document.getElementById("g3").style.visibility = "visible";
+        document.getElementById("g4").style.visibility = "visible";
+        document.getElementById("course").style.visibility = "visible";
+        document.getElementById("grade1").style.visibility = "visible";
+        document.getElementById("grade2").style.visibility = "visible";
+        document.getElementById("grade3").style.visibility = "visible";
+        document.getElementById("grade4").style.visibility = "visible";
+
+    }
+    if(value == '2')
+    {
+        document.getElementById("subject1").innerHTML = "IT 4153 Advanced Database";
+        document.getElementById("subject2").innerHTML = "IT 4713 BI Systems";
+        document.getElementById("subject3").innerHTML = "IT 3201 Database Models";
+        document.getElementById("subject4").innerHTML = "IT 3100 Program Logic";
+        document.getElementById("g1").style.visibility = "visible";
+        document.getElementById("g2").style.visibility = "visible";
+        document.getElementById("g3").style.visibility = "visible";
+        document.getElementById("g4").style.visibility = "visible";
+        document.getElementById("course").style.visibility = "visible";
+        document.getElementById("grade1").style.visibility = "visible";
+        document.getElementById("grade2").style.visibility = "visible";
+        document.getElementById("grade3").style.visibility = "visible";
+        document.getElementById("grade4").style.visibility = "visible";
+
+    }
+
+    if(value == '3')
+    {
+        document.getElementById("subject1").innerHTML = "IT 6203 IT Design Studio";
+        document.getElementById("subject2").innerHTML = "IT 6753 Advanced Web";
+        document.getElementById("subject3").innerHTML = "IT 6400 Datacenter Design";
+        document.getElementById("subject4").innerHTML = "IT 6633 Computer Forensics";
+        document.getElementById("g1").style.visibility = "visible";
+        document.getElementById("g2").style.visibility = "visible";
+        document.getElementById("g3").style.visibility = "visible";
+        document.getElementById("g4").style.visibility = "visible";
+        document.getElementById("course").style.visibility = "visible";
+        document.getElementById("grade1").style.visibility = "visible";
+        document.getElementById("grade2").style.visibility = "visible";
+        document.getElementById("grade3").style.visibility = "visible";
+        document.getElementById("grade4").style.visibility = "visible";
+
+    }
+
+    if(value == '4')
+    {
+        document.getElementById("subject1").innerHTML = "IT 6713 Business Intelligence";
+        document.getElementById("subject2").innerHTML = "IT 7113 Data Visualization";
+        document.getElementById("subject3").innerHTML = "IT 7201 Machine Learning";
+        document.getElementById("subject4").innerHTML = "IT 7113 Storage Visualization";
+        document.getElementById("g1").style.visibility = "visible";
+        document.getElementById("g2").style.visibility = "visible";
+        document.getElementById("g3").style.visibility = "visible";
+        document.getElementById("g4").style.visibility = "visible";
+        document.getElementById("course").style.visibility = "visible";
+        document.getElementById("grade1").style.visibility = "visible";
+        document.getElementById("grade2").style.visibility = "visible";
+        document.getElementById("grade3").style.visibility = "visible";
+        document.getElementById("grade4").style.visibility = "visible";
+
+    }
+
+    if(value == '0')
+    {
+        document.getElementById("subject1").innerHTML = "";
+        document.getElementById("subject2").innerHTML = "";
+        document.getElementById("subject3").innerHTML = "";
+        document.getElementById("subject4").innerHTML = "";
+        document.getElementById("g1").style.visibility = "hidden";
+        document.getElementById("g2").style.visibility = "hidden";
+        document.getElementById("g3").style.visibility = "hidden";
+        document.getElementById("g4").style.visibility = "hidden";
+        document.getElementById("course").style.visibility = "hidden";
+        document.getElementById("grade1").style.visibility = "hidden";
+        document.getElementById("grade2").style.visibility = "hidden";
+        document.getElementById("grade3").style.visibility = "hidden";
+        document.getElementById("grade4").style.visibility = "hidden";  
+
+    }
+
+}
+
+
+function evalute()
+{
+    var gradeOne=document.getElementById("g1").value;
+    var gradeTwo=document.getElementById("g2").value;
+    var gradeThree=document.getElementById("g3").value;   
+    var gradeFour=document.getElementById("g4").value;   
+
+    if(document.getElementById("selection").value=='1')
+    {
+
+       if((Number(gradeOne)+Number(gradeTwo)+Number(gradeThree)+Number(gradeFour))/4 >3.2)
+       {
+            document.getElementById("message").innerHTML = "Congratulations,you got it!";
+       }
+       else
+       {
+            document.getElementById("message").innerHTML = "Sorry, you are not eligible.";
+       }
+    }
+
+    if(document.getElementById("selection").value=='2')
+    {
+       if((Number(gradeOne)+Number(gradeTwo)+Number(gradeThree)+Number(gradeFour))/4 >3.2)
+       {
+            document.getElementById("message").innerHTML = "Congratulations,you got it!";
+       }
+       else
+       {
+            document.getElementById("message").innerHTML = "Sorry, you are not eligible.";
+       }
+    }
+
+    if(document.getElementById("selection").value=='3')
+    {
+       if((Number(gradeOne)+Number(gradeTwo)+Number(gradeThree)+Number(gradeFour))/4 >3.7)
+       {
+            document.getElementById("message").innerHTML = "Congratulations,you got it!";
+       }
+       else
+       {
+            document.getElementById("message").innerHTML = "Sorry, you are not eligible.";
+       }
+    }
+
+    if(document.getElementById("selection").value=='4')
+    {
+       if((Number(gradeOne)+Number(gradeTwo)+Number(gradeThree)+Number(gradeFour))/4 >3.7)
+       {
+            document.getElementById("message").innerHTML = "Congratulations,you got it!";
+       }
+       else
+       {
+            document.getElementById("message").innerHTML = "Sorry, you are not eligible.";
+       }
+    }
+    if(document.getElementById("selection").value=='0')
+    {
+
+       document.getElementById("message").innerHTML = "";
+
+    }
+}
+    
+
+</script>
+
+
+</body>
+</html>

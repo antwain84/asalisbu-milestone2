@@ -196,15 +196,15 @@ h3
 
 table, th, td
 {
-  border: 2px solid black;
+  border: 2px solid white;
+  background-color: black;    
 }
 
 tr
 {        
     font-size: 30px;
-    color: white;
-    text-shadow: 2px 2px black;    
-    
+    color: green;
+    text-shadow: 2px 2px black;       
 }
 
 .words
